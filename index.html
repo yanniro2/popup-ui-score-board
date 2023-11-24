@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Your Page</title>
+</head>
+
+<body>
+    <div class="w-screen h-screen flex items-center justify-center">
+
+        <!-- Button trigger -->
+        <button onclick="handleToggle()" class="bg-orange-400 text-white font-bold p-5 rounded">
+            Toggle button
+        </button>
+
+
+
+
+        <!-- Copy here -->
+
+        <div id="modal" class="hidden w-screen h-screen z-100 fixed flex backdrop-blur-sm items-center justify-center"
+            onclick="handleToggle()">
+            <div class="container h-[90vh] flex items-stat flex-col bg-white drop-shadow rounded-xl p-3 ">
+                <div class="flex p-3 border-b w-full h-full justify-between">
+                    <h3 class="font-bold">Lorem ipsum dolor sit amet.</h3>
+                    <button class="text-4xl">&times;</button>
+                </div>
+
+                <div class="w-full flex items-start gap-5 h-full pt-5">
+                    <div class="w-1/2 h-full ">
+                        <div class="w-full flex items-center justify-evenly bg-gray">
+                            <div class="flex flex-col items-center justify-center gap-5">
+                                <img src="./logo.jpeg" alt="img" class="w-1/2 h-1/2 object-contain rounded-xl" />
+
+                                <h1 class="h1-title">Team A</h1>
+                            </div>
+                            <div class="flex flex-col items-center justify-center gap-[1rem] w-full">
+                                <h1 class="h1-title">match name</h1>
+                                <div class="flex items-center justify-center p-3 bg-gray-100 rounded-full">
+                                    <h1 class="h1-title">Date : </h1>
+                                    2023-11-23
+                                </div>
+
+                                <div class="flex flex-col w-full gap-5">
+                                    <div class="flex items-center justify-center p-3 bg-gray-100 rounded-full w-full">
+                                        <h1 class="h1-title">start time : </h1>
+                                        11:54am
+                                    </div>
+                                    <div class="flex items-center justify-center p-3 bg-gray-100 rounded-full">
+                                        <h1 class="h1-title">end time : </h1>
+                                        11:54am
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-center p-3 bg-gray-100 rounded-full">
+                                    <h1 class="h1-title">Duration : </h1>
+                                    40 min
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center gap-5">
+                                <img src="./logo.jpeg" alt="img" class="w-1/2 h-1/2 object-contain rounded-xl" />
+
+                                <h1 class="h1-title">Team B</h1>
+                            </div>
+                        </div>
+
+                        <div class="w-full flex items-center h-1/2 flex-col gap-1">
+                            <div class="w-full p-3 flex border-b items-center justify-between">
+                                <div>Team A</div>
+                                <div>Team B</div>
+                            </div>
+
+                            <div class="div-box-1">
+                                <div>1</div>
+                                <div class="capitalize font-semibold">try</div>
+                                <div>3</div>
+                            </div>
+                            <div class="div-box-1">
+                                <div>1</div>
+                                <div class="capitalize font-semibold">try</div>
+                                <div>3</div>
+                            </div>
+                            <div class="div-box-1">
+                                <div>1</div>
+                                <div class="capitalize font-semibold">try</div>
+                                <div>3</div>
+                            </div>
+                            <div class="div-box-1">
+                                <div>1</div>
+                                <div class="capitalize font-semibold">try</div>
+                                <div>3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2 flex flex-col h-full justify-between overflow-hidden">
+                        <div class="h-1/2 w-full overflow-hidden">
+                            <img src="./troppy.png" alt="img troppy"
+                                class="w-full h-full flex items-center justify-center object-contain" />
+                        </div>
+                        <div class="h-1/2 w-full flex flex-wrap ">
+                            <img src="./img.avif" alt="sponsor img" class="w-1/2 h-1/2 object-cover" />
+                            <img src="./img.avif" alt="sponsor img" class="w-1/2 h-1/2 object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copy end -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
